@@ -28,6 +28,11 @@ body::after {
   transition: opacity 1.2s ease-in-out;
 }
 
+img {
+  height: 10em;
+  width: 10em;
+  margin-left: -2em;
+}
 
 body::before {
   background-image: url("./img/publ.png");
@@ -42,6 +47,12 @@ body::after {
   opacity: 0;
   animation: bore 5s ease forwards, fadeCasa 20s infinite;
 }
+.grod {
+    margin-left: -5vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    }
 
 @keyframes fadeGhost {
   0%, 40% { opacity: 1; }
@@ -181,32 +192,26 @@ p {
     margin-top: 20vh; 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 5rem;
+    gap: 2rem;
     width: 70vw;
 }
 
 
 .tarifs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  
 height: auto;
   padding-bottom: 10vh;
- width: 25vw;
+ width: 29vw;
  padding-left: 5vw;
 border-radius: 30px;
-background-color: var(--blocks);
-opacity: 0;
-transform: translateY(50px);
-cursor: pointer;
+background-color: #000000c4;
+opacity: 1;
   transition: background-color 0.3s ease;
 }
-.tarifs:hover {
-background-color: #000000;
-}
 
-
-
-.tarifs.visible {
-  animation: blocksup 1s ease forwards;
-}
 
 .itemera {
   margin-left: 1.5em; 
@@ -221,8 +226,8 @@ background-color: #000000;
 
 .pricera {
   font-weight: bold;
-  position: absolute;
-  bottom: 2vh;
+  font-size: 100%;
+  margin-left: -3em;
 }
 .category {
   margin-top: 30vh;
@@ -1203,7 +1208,6 @@ margin-bottom: 2em;
 }
  
  
-
 
 
 
